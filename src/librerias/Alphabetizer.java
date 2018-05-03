@@ -22,4 +22,9 @@ public class Alphabetizer {
         Collections.sort(this.lines);
         return this.lines.toArray(new String[this.lines.size()]);
     }
+    
+    public String[] getSortedLinesDecremental() {
+        Collections.sort(this.lines, Collections.reverseOrder());
+        return this.lines.toArray(new String[this.lines.size()]);
+    }
 }
