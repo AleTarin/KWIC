@@ -11,16 +11,16 @@ import java.util.Iterator;
  *
  * @author Usuario
  */
-public class StopWords {
+public class Ignore {
     private final HashSet<String> _StopWords;
-    private static StopWords _words;
-    private StopWords() {
+    private static Ignore _words;
+    private Ignore() {
         this._StopWords = new HashSet<>();
     }
 
-    public static StopWords getStopWords() {
+    public static Ignore getStopWords() {
         if (_words == null) {
-            _words = new StopWords();
+            _words = new Ignore();
         }
 
         return _words;
